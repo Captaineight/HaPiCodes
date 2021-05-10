@@ -320,6 +320,11 @@ class box():
                                  self.rampSlope, cut_factor=self.cutFactor, drag=self.dragFactor)
         return self.smooth_
 
+    def smoothPhase(self, phi=0.0):
+        self.smooth_ = smoothBox(self.width, self.ssbFreq, self.iqScale, self.phase + phi, self.skewPhase, self.amp,
+                                 self.rampSlope, cut_factor=self.cutFactor, drag=self.dragFactor)
+        return self.smooth_
+
     def smoothXN(self):
         self.smooth_ = smoothBox(self.width, self.ssbFreq, self.iqScale, self.phase + 180, self.skewPhase, self.amp,
                                  self.rampSlope, cut_factor=self.cutFactor, drag=self.dragFactor)

@@ -24,13 +24,10 @@ class ApplicationConfig:
         self.dig_trigger_action_name = "DigTrigger"
         self.fp_trigger_name = "FpTrigger"
         self.boards = [['M3202A', 1, 2, self.options, "A1"],
-                       ['M3202A', 1, 3, self.options, "A2"], 
-                       ['M3202A', 1, 4, self.options, "A3"],
-                       ['M3102A', 1, 5, self.options, "D1"],
-#                        ['M3102A', 1, 6, self.options, "D2"],
-                       ['M3201A', 1, 7, self.options, "M1"],
-                       ['M3201A', 1, 8, self.options, "M2"],
-                       ['M3201A', 1, 9, self.options, "M3"]]
+                       ['M3202A', 1, 4, self.options, "A2"], 
+                       ['M3102A', 1, 6, self.options, "D1"],
+                       ['M3201A', 1, 3, self.options, "M1"],
+                       ['M3201A', 1, 5, self.options, "M2"]]
 
     class ModuleDescriptor:
         "Descriptor for module objects"

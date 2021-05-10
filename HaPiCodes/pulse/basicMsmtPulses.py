@@ -89,8 +89,8 @@ class waveformAndQueue():
         self.updateWforIQM('pulse.piPulse_gau', self.piPulse_gau.x(), self.QdriveChannel)
         self.updateWforIQM('pulse.msmt_box', self.msmt_box.smooth(), self.CdriveChannel)
         if qdrive:
-            self.addQdrive('pulse.piPulse_gau', 0, 200)
-        self.addCdriveAndMSMT('pulse.msmt_box', 0, 200 + self.qDriveMsmtDelay)
+            self.addQdrive('pulse.piPulse_gau', 0, 500)
+        self.addCdriveAndMSMT('pulse.msmt_box', 0, 500 + self.qDriveMsmtDelay)
         return self.W, self.Q
 
     def piPulseTuneUp(self):
